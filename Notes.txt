@@ -1,0 +1,35 @@
+Tell the computer the instruction
+
+Add 5 and 3
+
+instruction 
+
+input two numbers 
+first number = 5
+second number = 3
+add 5 and 3
+the sum is 8
+
+--------------------------
+ASM
+--------------------------
+
+mov eax, 5      ; put the number 5 to eax
+add eax, 3      ; add 3 to the value of eax
+                ; 5+3
+eax = 8
+
+---------------------------
+section .data
+
+section .text
+
+section .bss
+
+--------------------
+Register - 32bit (8,16,32,64)
+--------------------
+EAX
+EBX
+ECX
+EDX
