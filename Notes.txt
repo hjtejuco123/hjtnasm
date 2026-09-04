@@ -33,3 +33,40 @@ EAX
 EBX
 ECX
 EDX
+
+-----------------------------
+
+        program
+          |
+          |
+        memory 
+          |
+          |
+         cpu 
+          |
+        fetch instruction
+          |
+        decode 
+          |
+        execute
+          |
+        registers
+
+     data      address
+
+mov eax, 3
+add eax, 5  
+
+
+
+----------------------
+Virtual box -> ubuntu 22.04 
+        gui
+
+Windows
+    Linux wsl
+
+Docker
+    ubuntu nasm 32bit
+Mac
+    Docker
