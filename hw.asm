@@ -1,7 +1,7 @@
 ;create a program to display hello world
 ;NASM 32 bit  
 section .data
-    msg db "HelloWor ld!", 0xA  ;LF -> \n 
+    msg db "Hello World!", 0xA  ;LF -> \n 
     ;msg_len equ $ - msg         ;compute length string    13 
     msg2 db "I Love ASM programming",0xA
     msg_len2 equ $ - msg2 
