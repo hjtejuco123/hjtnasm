@@ -1,0 +1,11 @@
+services:
+  nasm:
+    build: .
+    platform: linux/amd64
+    image: hjtnasm
+    container_name: hjtnasm
+    working_dir: /work
+    volumes:
+      - .:/work
+    stdin_open: true
+    tty: true
