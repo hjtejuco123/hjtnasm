@@ -1,0 +1,49 @@
+
+sys_write
+
+Values      Name                Purpose
+
+0           Standard input      Keyboard - 
+1           Standard output     Terminal - Output
+2           Standard Error      Error
+
+
+eax         system_call         Purpose 
+1           sys_exit            End the program
+2           sys_fork            Create a process
+3           sys_read            read data
+4           sys_write           Write data
+5           sys_open            Open a File
+6           sys_close           Close a File
+
+
+EAX - System Call 
+EBX - First Argument
+ECX - Second Argument
+EDX - Fourth Argument
+
+EDI - Fift Argument
+EBP - Sixth Argument 
+
+-------------------
+Operand and Addressing 
+
+mov destination, source
+add destination, source
+
+Register addressing
+    CPU Register 
+        mov eax,ebx 
+Immediate addressing
+    Constant encoded into the instruction
+        mov eax, 25
+        store a literal value 25 
+Memory addressing
+    Memory
+        mov eax, [number]
+        read and write into the data memory 
+
+8bit    AH/AL BH/BL, CH/CL, DH/DL
+16bit   AX, BX, CX, DX
+32bit   EAX, EBX, ECX, EDX 
+64bit   RAX. RBX, RCX, RDX
