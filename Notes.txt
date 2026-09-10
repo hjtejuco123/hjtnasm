@@ -21,11 +21,11 @@ eax = 8
 
 ---------------------------
 section .data
-
+    where we declare init variables and constants 
 section .text
-
+    where actual executable codes (instruction) lives.
 section .bss
-
+    where we declare uninitialized variables 
 --------------------
 Register - 32bit (8,16,32,64)
 --------------------
