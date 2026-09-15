@@ -1,0 +1,25 @@
+
+Arithmetic operations
+    Increment       INC 
+    Decrement       DEC 
+    Addition        ADD 
+    Subtraction     SUB 
+    Multiplication  MUL 
+    Division        DIV
+
+Logical
+    AND
+    OR 
+    XOR
+    TEST
+    NOT
+
+total = num1 + num2. (HL)
+
+mov eax, [num1]         5
+add eax, [num2]            +      3 = 8
+mov [total], eax        8
+
+8       AH,AL, BH,BL, CH,CL, DH,DL
+16      AX,BX,CX,DX 
+32      EAX, EBX, ECX, EDX
