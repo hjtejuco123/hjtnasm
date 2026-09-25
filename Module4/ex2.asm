@@ -30,7 +30,7 @@ _start:
     mov al,[x]
     sub al,'0'
     test al,1       ;bitwise AND 7=0111 (odd) 8=1000 (even) 
-    jnz .odd 
+    jnz .odd        ; 2 0010
 
     mov eax,4
     mov ebx,1

@@ -19,7 +19,7 @@ _start:                     ;tell linker entry point
     mov   ecx, odd_msg       ;message to write
     mov   edx, len2          ;length of message
     int   0x80               ;call kernel
-    jmp   outprog
+    jmp   outprog            ;jump unconditional jump 
 
 evnn:   
   
