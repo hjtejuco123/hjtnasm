@@ -1,8 +1,8 @@
 section   .data
-    even_msg  db  'Even Number!' ;message showing even number
+    even_msg  db  'Even Number!', 0xA ;message showing even number
     len1  equ  $ - even_msg 
    
-    odd_msg db  'Odd Number!'    ;message showing odd number
+    odd_msg db  'Odd Number!', 0xA    ;message showing odd number
     len2  equ  $ - odd_msg
 
 section .text
@@ -10,10 +10,10 @@ section .text
 	
 _start:                     ;tell linker entry point
 
-    mov   ax,   7h           ;getting 8 in the ax 
+    mov   ax,   7h           ;getting 8 in the ax   binary 0111 odd, 8=1000 
     and   ax, 1              ;and ax with 1
     
-    jz    evnn
+    jz    evnn               ;Jump if Zero
     mov   eax, 4             ;system call number (sys_write)
     mov   ebx, 1             ;file descriptor (stdout)
     mov   ecx, odd_msg       ;message to write
@@ -23,7 +23,7 @@ _start:                     ;tell linker entry point
 
 evnn:   
   
-    mov   ah,  09h
+    ;mov   ah,  09h          ;print - sys_write
     mov   eax, 4             ;system call number (sys_write)
     mov   ebx, 1             ;file descriptor (stdout)
     mov   ecx, even_msg      ;message to write
