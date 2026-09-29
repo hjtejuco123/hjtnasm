@@ -27,9 +27,9 @@ _start:
     mov edx,2 
     int 0x80
 
-    mov al,[x]
-    sub al,'0'
-    test al,1       ;bitwise AND 7=0111 (odd) 8=1000 (even) 
+    mov al,[x]      ;loads the value x al register 4
+    sub al,'0'      ;convert in ascii 52-48 = 4
+    test al,1       ;bitwise AND  = 0100 ->  if the last digit 1-odd 0-even 
     jnz .odd        ; 2 0010
 
     mov eax,4

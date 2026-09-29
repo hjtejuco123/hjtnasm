@@ -29,8 +29,8 @@ _start:
     mov edx,2
     int 0x80
 
-    mov al,[x]
-    cmp al,'a' 
+    mov al,[x]      ;load the first char to the al register 
+    cmp al,'a'      ;compare the value  if the letter is equal to a 
     je .vowel
     cmp al,'e' 
     je .vowel
