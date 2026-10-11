@@ -14,12 +14,30 @@ Logical
     TEST
     NOT
 
-total = num1 + num2. (HL)
+HL
+
+total = num1 + num2  (+)
+
+sum of 5 and 3 = 8
 
 mov eax, [num1]         5
-add eax, [num2]            +      3 = 8
+add eax, [num2]        3  + 5  =  8
 mov [total], eax        8
+
+Registers
+
+    A - Accumulator     - Arithmetic, return value, 
+    B - Base            - General purpose storage
+    C - Couter          - Loops, counters
+    D - Data            - IO related use
+    ESI -   Source idex  - Source addres, memory operation
+    EDI -   Destination index  - Destination Address
+    ESP -   Stack Pointer        - Point to the top of the stack 
+    EIP -   Instruction Pointer   - Address to next Instruction
+    EFLAGS  Status Control Flags    - Carry Sign, Overflow 
+
 
 8       AH,AL, BH,BL, CH,CL, DH,DL
 16      AX,BX,CX,DX 
 32      EAX, EBX, ECX, EDX
+64      RAX, RBX, RCX, RDX
